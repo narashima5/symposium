@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .header {
+        padding-left: 25%;
+        padding-right: 25%;
+      }
+      .headerContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .logoContent {
+        background: linear-gradient(green, lightgreen);
+        background-clip: text;
+        color: transparent;
+      }
+      .details {
+        margin-top: 3rem;
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        h1 {
+          font-size: 60px;
+          width: 100%;
+        }
+      }
+      .detailsContent{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        p {
+          font-size: 20px;
+          margin-top: 10px;
+          line-height: 30px;
+        }
+      }
+      .buttonsContainer{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: center;
+      }
+      .buttons{
+        background-color: rgb(227, 227, 227);
+        border: 2px solid rgb(227, 227, 227);
+        border-radius: 25px;
+        width: 500px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        button{
+            height: 5rem;
+            width: 10rem;
+            font-size: large;
+            border: 2px solid linear-gradient(green, lightgreen);
+            border-radius: 25px;
+            background: linear-gradient(green, lightgreen);
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="header">
+      <header class="headerContent">
+        <img src="images.jpeg" alt="" style="width: 100px" />
+        <p style="font-size: 50px" class="logoContent">PEC CGPA CALCULATOR</p>
+      </header>
+    </div>
+    <div class="details">
+      <h1>What's CGPA?</h1>
+      <div class="detailsContent">
+        <p>Grade points are given to all subjects in each semester.</p>
+        <p>
+          Each subject contains credit points and it differs subject to subject.
+        </p>
+        <p>
+          we can calculate GPA by multiplying grade points and credit of each
+          subject. Then add all values and divide by total credits
+        </p>
+        <p>
+          To calculate CGPA we need to add GPA of all semesters and divide by
+          total semesters
+        </p>
+      </div>
+    </div>
+
+    <div class="buttonsContainer">
+        <div class="buttons">
+            <h4 style="margin: 0;">We calculate the GPA most accurately for you.</h4>
+            <h5 style="margin: 0;">Click the below button to calculate GPA</h5>
+            <button onclick="window.location.href = 'gpa.html';">Calculate GPA</button>
+        </div>
+      
+        <div class="buttons">
+            <h4 style="margin: 0;">We calculate the CGPA most accurately for you.</h4>
+            <h5 style="margin: 0;">Click the below button to calculate CGPA</h5>
+            <button onclick="window.location.href = 'cgpa.html';">Calculate CGPA</button>
+        </div>
+    </div>
+  </body>
+</html>
