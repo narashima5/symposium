@@ -11,7 +11,7 @@ function calculateCGPA() {
   const arr = [s1, s2, s3, s4, s5, s6, s7, s8];
   let totalSem = 0;
   let totalGpa = 0;
-  arr.filter(Boolean).forEach((gpa) => {
+  arr.filter(Boolean).forEach((gpa) =>  {
     totalGpa += gpa;
     totalSem += 1;
   });
