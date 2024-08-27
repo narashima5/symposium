@@ -9,7 +9,6 @@ function calculateCGPA() {
   const s8 = parseFloat(document.getElementById("s8").value);
 
   const arr = [s1, s2, s3, s4, s5, s6, s7, s8];
-  console.log(arr);
   let totalSem = 0;
   let totalGpa = 0;
   arr.filter(Boolean).forEach((gpa) => {
@@ -17,7 +16,5 @@ function calculateCGPA() {
     totalSem += 1;
   });
   const cgpa = totalGpa / totalSem;
-  document.getElementById("result").innerText = `Your CGPA is: ${cgpa.toFixed(
-    2
-  )}`;
+  document.getElementById("result").innerText = `Your CGPA is: ${cgpa.toFixed(2)}`;
 }
