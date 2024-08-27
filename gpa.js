@@ -35,5 +35,5 @@ function calculateGPA() {
   }
 
   let totalGpa = gpa/totalCredit;
-  document.getElementById("result").innerText = `Your GPA is: ${totalCredit.toFixed(2)}`;
+  document.getElementById("result").innerText = `Your GPA is: ${totalGpa.toFixed(2)}`;
 }
